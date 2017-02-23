@@ -1,0 +1,42 @@
+    body{
+        font-family: sans-serif;
+        background-color: lightpink;
+  }
+
+    h1{
+      color: #32d4a2;
+      text-align: left;
+      font-family: Calibri;
+    }
+
+    p{
+      color: white;
+      text-align: center;
+      font-family: arial;
+      font-size: 20px;
+    }
+
+    img{
+      height: 200px;
+      width: auto;
+    }
+
+    h2{
+      color: white;
+      text-align: left;
+      font-family: Geneva;
+      font-size: 18px;
+    }
+
+    li{
+      font-family: verdana;
+      color: rgb(0, 0, 255);
+    }
+
+    .purple{
+      color: purple;
+    }
+
+    #coloredparagraph{
+      color: yellow;
+    }
