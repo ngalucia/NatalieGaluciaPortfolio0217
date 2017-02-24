@@ -1,7 +1,13 @@
     body{
         font-family: sans-serif;
         background-color: lightpink;
+        margin: 0;
   }
+
+    nav{
+      background-color: lightblue;
+      margin-top: 1em;
+    }
 
     h1{
       color: #32d4a2;
@@ -28,9 +34,42 @@
       font-size: 18px;
     }
 
+    ul{
+      margin: 0;
+      padding: 1rem;
+    }
+
     li{
       font-family: verdana;
       color: rgb(0, 0, 255);
+      display: inline;
+      margin-right: 0.75em;
+    }
+
+    section{
+     margin-bottom: 1em
+    }
+
+    section:nth-child(2n){
+      background-color: hotpink
+    }
+
+    footer{
+      background-color: white;
+    }
+
+    footer li:last-child{
+      margin-left: 22em
+    }
+
+    a{
+      text-decoration: none
+    }
+
+    .container {
+      width: 90%;
+      max-width: 760px;
+      margin: 0 auto;
     }
 
     .purple{
