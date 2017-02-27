@@ -5,8 +5,12 @@
   }
 
     nav{
-      background-color: lightblue;
+      background-color: lightgreen;
       margin-top: 1em;
+    }
+
+    nav li:nth-child(2n){
+      color: hotpink
     }
 
     h1{
@@ -46,6 +50,10 @@
       margin-right: 0.75em;
     }
 
+    div>p{
+      color: white;
+      text-align: left;
+    }
     section{
      margin-bottom: 1em
     }
@@ -77,5 +85,5 @@
     }
 
     #coloredparagraph{
-      color: yellow;
+      color: lightyellow;
     }
