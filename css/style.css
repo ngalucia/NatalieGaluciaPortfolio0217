@@ -9,7 +9,7 @@
       margin-top: 1em;
     }
 
-    nav li:nth-child(2n){
+    nav li:nth-child(2){
       color: hotpink
     }
 
@@ -86,4 +86,19 @@
 
     #coloredparagraph{
       color: lightyellow;
+    }
+
+    input[type="text"]{
+      background-color: lightgreen;
+      color: white;
+    }
+
+    input[type="email"]{
+      background-color: lightgreen;
+      color:white;
+    }
+
+    input[type="radio"] + span{
+      display:inline;
+      text-align:left;
     }
