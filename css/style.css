@@ -7,6 +7,10 @@
     nav{
       background-color: lightgreen;
       margin-top: 1em;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
     }
 
     nav li:nth-child(2){
@@ -74,10 +78,48 @@
       text-decoration: none
     }
 
+    nav li >a{
+      color:hotpink
+    }
+
+    div.container{
+      padding-top: 4em;
+    }
+
     .container {
       width: 90%;
       max-width: 760px;
       margin: 0 auto;
+    }
+
+    .dropdown{
+      cursor: pointer;
+      position: relative;
+    }
+
+    .dropdown > ul{
+      position:absolute;
+      top: 1.25em;
+      left: 0;
+      /*display: none;*/
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+
+      transition: all 0.3s ease;
+
+      background-color: white;
+    }
+
+    .dropdown:hover > ul{
+      /*display:block;*/
+      height: auto;
+      padding: 1em;
+    }
+
+    .sidebar{
+      cursor: pointer;
+      position: relative;
     }
 
     .purple{
@@ -101,4 +143,12 @@
     input[type="radio"] + span{
       display:inline;
       text-align:left;
+    }
+
+    @media screen and (max-width: 414px){
+      input[type="text"],
+      input[type="email"],
+      input[type="password"]{
+          width: 100%
+      }
     }
