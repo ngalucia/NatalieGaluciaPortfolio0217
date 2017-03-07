@@ -211,6 +211,27 @@ border-spacing: 0;
       position: relative;
     }
 
+    .sidebar > ul{
+      position:absolute;
+      top: 0;
+      left: 1.25em;
+      height: 0;
+      padding: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      background-color: white;
+    }
+
+    .sidebar:hover > ul{
+      height: auto;
+      padding: 1em;
+    }
+
+    #sidebararrange{
+      display: flex;
+      justify-content: flex-start;
+    }
+
     .purple{
       color: purple;
     }
