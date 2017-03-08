@@ -212,13 +212,14 @@ border-spacing: 0;
     }
 
     .sidebar > ul{
-      position:absolute;
+      position: fixed;
       top: 0;
-      left: 1.25em;
-      height: 0;
+      right: 0;
+      height: 100%;
+      Width: -30%;
       padding: 0;
       overflow: hidden;
-      transition: all 0.3s ease;
+      transition: right 0.15s ease;
       background-color: white;
     }
 
@@ -227,9 +228,10 @@ border-spacing: 0;
       padding: 1em;
     }
 
-    #sidebararrange{
+    #sidebararrange li{
       display: flex;
       justify-content: flex-start;
+      flex-direction: column;
     }
 
     .purple{
@@ -238,6 +240,18 @@ border-spacing: 0;
 
     #coloredparagraph{
       color: lightyellow;
+    }
+
+    #prompt .emphasis{
+      color: orange;
+      font-size: 150%;
+      font-weight: 400;
+    }
+
+    #prompt .style{
+      color: hotpink;
+      font-size: 110%;
+      font-weight: bold;
     }
 
     input[type="text"]{
