@@ -1,9 +1,9 @@
 var story = {
-    "enter": "You walk into Target and you can either one hundred and eighty dollars to spend in twenty minutes or ten dollars to spend in an hour. Which do you choose more or less?",
-    "more": "You can only choose two items and need to make sure you spend all one hundred eighty dollars or you risk losing it it all. You better have your shopping shoes on!",
-    "less": "You have to buy at least five items for your ten dollars or you lose the challenge and the dollar secion is off limits.",
-    "lose": "You lose, because this was the wrong choice and an impossible task.",
-    "choose": "Do you go first to the clothes or housewares?"
+    "enter": "Walking into target one day with only twenty minutes to shop.   You notice in your cartwheel app that there a ton of good deals going on, but not for the things you came for.  Do look everywhere and risk not getting what you need or just find what you need?",
+    "look everywhere": "You decide to look everywhere and there’s 40% off in clothes!  You have to look now and try a few things on.  Do you end up wasting all of your time or are you quick enough to find a new shirt and everything else you need?",
+    "find what you need": "Well that was boring!  Now you missed out on getting a free $10 giftcard for trying on a shirt!  That’s too bad for you.",
+    "waste time": "It’s really too bad you didn’t get everything else you needed, now you’ll just have to make another trip and at least you got your free $10 giftcard too!",
+    "quick enough": "Excellent job!  You’re a pro target shopper who knows how to handle any challenge that comes your way."
 };
 
 
@@ -13,14 +13,14 @@ var secondAction;
 var runStory = function runStory( choice ){
     var firstAction = prompt( story[choice] );
 
-    if( firstAction === "more" ){
-        secondAction = prompt( story.more );
+    if( firstAction === "look everywhere" ){
+        secondAction = prompt( story["look everywhere"] );
     }
-    else if( firstAction === "less" ){
-        secondAction = prompt( story.lose );
+    else if( firstAction === "find what you need" ){
+        secondAction = prompt( story ["find what you need"] );
     }
     else{
-        output.textContent = "Not quite, try again.";
+        output.textContent = "You have to choose and get your shopping done!";
     }
 };
 
